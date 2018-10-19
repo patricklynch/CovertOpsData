@@ -1,0 +1,23 @@
+PODS:
+  - CovertOps (0.1.2)
+  - CovertOpsData (0.1.0):
+    - CovertOps
+
+DEPENDENCIES:
+  - CovertOpsData (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CovertOps
+
+EXTERNAL SOURCES:
+  CovertOpsData:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CovertOps: 3f8ef15b1a4b64de5bfeff43fc38b05503159eca
+  CovertOpsData: 65d50b0ff8c03c62a99bced9f8b602e018b57cb9
+
+PODFILE CHECKSUM: 2874e778c0a49d7487b0f0148fb7d737daa59188
+
+COCOAPODS: 1.5.3

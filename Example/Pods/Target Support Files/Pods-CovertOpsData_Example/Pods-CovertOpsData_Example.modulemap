@@ -1,0 +1,6 @@
+framework module Pods_CovertOpsData_Example {
+  umbrella header "Pods-CovertOpsData_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

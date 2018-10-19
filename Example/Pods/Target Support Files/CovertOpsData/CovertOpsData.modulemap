@@ -1,0 +1,6 @@
+framework module CovertOpsData {
+  umbrella header "CovertOpsData-umbrella.h"
+
+  export *
+  module * { export * }
+}
