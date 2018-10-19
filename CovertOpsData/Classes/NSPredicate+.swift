@@ -1,12 +1,12 @@
 import Foundation
 
-extension Array where Element : NSPredicate {
+public extension Array where Element : NSPredicate {
     
-    func compoundOr() -> NSPredicate {
+    public func compoundOr() -> NSPredicate {
         return NSCompoundPredicate(orPredicateWithSubpredicates: self)
     }
     
-    func compoundAnd() -> NSPredicate {
+    public func compoundAnd() -> NSPredicate {
         return NSCompoundPredicate(andPredicateWithSubpredicates: self)
     }
 }

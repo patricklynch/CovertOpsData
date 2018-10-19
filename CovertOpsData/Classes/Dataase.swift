@@ -1,5 +1,4 @@
 import Foundation
-import CovertOps
 import CoreData
 
 protocol Database {
