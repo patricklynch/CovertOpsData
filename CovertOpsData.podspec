@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CovertOpsData'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'An extension of the `CovertOps` pod which includes a compatible CoreData expansion pack.'
   
   s.dependency 'CovertOps'

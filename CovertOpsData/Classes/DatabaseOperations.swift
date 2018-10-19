@@ -1,5 +1,4 @@
-import UIKit
-import CovertOps
+import Foundation
 import CoreData
 
 /// An operation that is configured to select a database by name from one of the initialized

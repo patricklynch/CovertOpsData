@@ -1,5 +1,4 @@
-import UIKit
-import CovertOps
+import Foundation
 import CoreData
 
 public class InitializeDatabase: AsyncOperation<Void> {
