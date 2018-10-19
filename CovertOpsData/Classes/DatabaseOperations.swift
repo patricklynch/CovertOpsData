@@ -7,14 +7,14 @@ import CovertOps
 /// have been initialized.
 open class DatabaseOperation<OutputType>: AsyncOperation<OutputType> {
     
-    lazy var database: Database = {
+    public lazy var database: Database = {
         return databaseSelector.database(named: self.databaseName)
     }()
     
     private(set) var databaseName: String?
-    var databaseSelector: DatabaseSelector = MainDatabaseSelector.shared
+    public var databaseSelector: DatabaseSelector = MainDatabaseSelector.shared
     
-    init(databaseName: String? = nil) {
+    public init(databaseName: String? = nil) {
         self.databaseName = databaseName
     }
 }
@@ -33,19 +33,13 @@ open class DatabaseWriteOperation: DatabaseOperation<Void> {
         }
     }
     
-    func write(context: NSManagedObjectContext) {
+    open func write(context: NSManagedObjectContext) {
         fatalError("Override in subclass")
     }
     
-    final func save(_ context: NSManagedObjectContext) {
+    public final func save(_ context: NSManagedObjectContext) {
         database.save(context)
     }
-}
-
-/// Defines an object that has produced an array of object IDs to re-fetched again
-/// from another context.
-protocol FetchedObjectsDependency {
-    var objectIds: [NSManagedObjectID]? { get }
 }
 
 /// An operation that will fetch managed objects objects corresponding to the provided `objectIds`
@@ -54,9 +48,9 @@ protocol FetchedObjectsDependency {
 /// the view context in order to be displayed to the user.
 open class DatabaseRefetch<T: NSManagedObject>: DatabaseOperation<[T]> {
     
-    let objectIds: [NSManagedObjectID]?
+    public let objectIds: [NSManagedObjectID]?
     
-    init(objectIds: [NSManagedObjectID]? = nil) {
+    public init(objectIds: [NSManagedObjectID]? = nil) {
         self.objectIds = objectIds
     }
     
@@ -87,20 +81,20 @@ open class DatabaseRefetch<T: NSManagedObject>: DatabaseOperation<[T]> {
 /// The context is automatically selected based on the thread of execution.  When `execute()`
 /// is called on the main thread, the view context of the persistent store is selected.  On
 /// any other thread, a background child context will be selected.
-class DatabaseSyncRead<OutputType> {
+open class DatabaseSyncRead<OutputType> {
     
     lazy var database: Database = {
         return databaseSelector.database(named: self.databaseName)
     }()
     
     private(set) var databaseName: String?
-    var databaseSelector: DatabaseSelector = MainDatabaseSelector.shared
+    public final var databaseSelector: DatabaseSelector = MainDatabaseSelector.shared
     
-    init(databaseName: String? = nil) {
+    public init(databaseName: String? = nil) {
         self.databaseName = databaseName
     }
     
-    final func execute() -> OutputType {
+    public final func execute() -> OutputType {
         let context: NSManagedObjectContext
         if Thread.isMainThread {
             context = database.viewContext
@@ -114,7 +108,7 @@ class DatabaseSyncRead<OutputType> {
         return output
     }
     
-    func fetch(context: NSManagedObjectContext) -> OutputType {
+    open func fetch(context: NSManagedObjectContext) -> OutputType {
         fatalError("Override in subclass")
     }
 }
@@ -136,7 +130,7 @@ open class DatabaseFetchObject<OutputType: NSManagedObject>: DatabaseOperation<O
         }
     }
     
-    func fetch(context: NSManagedObjectContext) -> OutputType? {
+    open func fetch(context: NSManagedObjectContext) -> OutputType? {
         fatalError("Override in subclass")
     }
 }
@@ -158,7 +152,7 @@ open class DatabaseFetchObjects<OutputType: NSManagedObject>: DatabaseOperation<
         }
     }
     
-    func fetch(context: NSManagedObjectContext) -> [OutputType]? {
+    open func fetch(context: NSManagedObjectContext) -> [OutputType]? {
         fatalError("Override in subclass")
     }
 }

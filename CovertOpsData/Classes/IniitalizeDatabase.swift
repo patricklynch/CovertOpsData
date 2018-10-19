@@ -9,7 +9,7 @@ public class InitializeDatabase: AsyncOperation<Void> {
     
     var databaseSelector: DatabaseSelector = MainDatabaseSelector.shared
     
-    init(databaseName: String, url: URL?) {
+    public init(databaseName: String, url: URL?) {
         self.databaseName = databaseName
         self.url = url
     }
