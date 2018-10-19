@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CovertOpsData'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CovertOpsData.'
+  s.summary          = 'An extension of the `CovertOps` pod which includes a compatible CoreData expansion pack.'
   
   s.dependency 'CovertOps'
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+The original `CovertOps` framework uses operations from Apple's Foundation framework for achieving precise timing, exclusivity, thread safety, asynchronous behavior and dependency management.  This add-on uses that architecture to create a thread-safe implementation of a CoreData stack that uses operations to read and write from a persistent store.
                        DESC
 
   s.homepage         = 'https://github.com/patricklynch/CovertOpsData'
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
+  s.swift_version = '4.2'
   s.source_files = 'CovertOpsData/Classes/**/*'
   
   # s.resource_bundles = {
