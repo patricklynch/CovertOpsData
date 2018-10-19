@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CovertOpsData_Example' do
+  pod 'CovertOpsData', :path => '../'
+
+  target 'CovertOpsData_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
