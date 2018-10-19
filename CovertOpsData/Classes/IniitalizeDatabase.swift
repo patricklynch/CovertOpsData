@@ -1,5 +1,6 @@
 import Foundation
 import CoreData
+import CovertOps
 
 public class InitializeDatabase: AsyncOperation<Void> {
     
@@ -14,7 +15,12 @@ public class InitializeDatabase: AsyncOperation<Void> {
     }
     
     override public func execute() {
-        let database = CoreDataStack(dataModelName: databaseName, at: url)
+        let database: Database
+        if #available(iOS 10.0, *) {
+            database = PersistentContainerStack(dataModelName: databaseName, at: url)
+        } else {
+            database = LegacyCoreDataStack(dataModelName: databaseName, at: url)
+        }
         database.load() { error in
             if let error = error {
                 print("Error initializing persistent store: \(error)")

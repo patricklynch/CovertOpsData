@@ -33,9 +33,16 @@ public extension NSManagedObjectContext {
     public func delete(ids: [String], entity: NSManagedObject.Type, idFieldName: String = "id") {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entity.entityName)
         fetchRequest.predicate = NSPredicate(format: "\(idFieldName) IN %@", ids)
-        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         do {
-            let _ = try execute(deleteRequest)
+            if #available(iOS 10.0, *) {
+                let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+                let _ = try execute(deleteRequest)
+            } else {
+                let results = try fetch(fetchRequest)
+                for object in results as? [NSManagedObject] ?? [] {
+                    delete(object)
+                }
+            }
         } catch {
             assertionFailure("Failed to delete request: \(error)")
         }

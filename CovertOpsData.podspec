@@ -8,10 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CovertOpsData'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'An extension of the `CovertOps` pod which includes a compatible CoreData expansion pack.'
-  
-  s.dependency 'CovertOps'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,7 +28,7 @@ The original `CovertOps` framework uses operations from Apple's Foundation frame
   s.source           = { :git => 'https://github.com/patricklynch/CovertOpsData.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '8.0'
   s.swift_version = '4.2'
   s.source_files = 'CovertOpsData/Classes/**/*'
   
@@ -41,4 +39,6 @@ The original `CovertOps` framework uses operations from Apple's Foundation frame
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.dependency 'CovertOps'
 end

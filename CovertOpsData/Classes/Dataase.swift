@@ -1,53 +1,42 @@
 import Foundation
 import CoreData
 
-protocol Database {
-    func save(_ context: NSManagedObjectContext)
+public protocol Database {
     var viewContext: NSManagedObjectContext { get }
     var backgroundContext: NSManagedObjectContext { get }
+    func load(completion: @escaping (Error?)->())
 }
 
-protocol DatabaseSelector {
-    func database(named databaseName: String?) -> Database
-    func add(database: Database, named databaseName: String)
-    var defaultDatabase: Database? { get set }
-}
-
-class MainDatabaseSelector: DatabaseSelector {
+public extension Database {
     
-    static let shared: DatabaseSelector = MainDatabaseSelector()
-    
-    private var databasesByName: [String: Database] = [:]
-    
-    private init() {}
-    
-    var defaultDatabase: Database?
-    
-    // MARK: - DatabaseSelector
-    
-    func database(named databaseName: String?) -> Database {
-        if let databaseName = databaseName {
-            guard let selectedDatabase = databasesByName[databaseName]else {
-                fatalError("Failed to find database named: \(databaseName)")
+    func save(_ context: NSManagedObjectContext) {
+        guard context.hasChanges else {
+            return
+        }
+        
+        do {
+            try context.save()
+        } catch {
+            let nserror = error as NSError
+            var message = "\n\n *** FAILED TO SAVE! ***\n"
+            let userInfo = nserror.userInfo
+            var managedObject: NSManagedObject?
+            if let detailedErrors = userInfo[ "NSDetailedErrors" ] as? [NSError] {
+                for detailedError in detailedErrors {
+                    if let validationField = detailedError.userInfo[ "NSValidationErrorKey" ] as? String,
+                        let object = detailedError.userInfo[ "NSValidationErrorObject" ] as? NSManagedObject {
+                        managedObject = object
+                        message += "\n - Missing value for non-optional field \"\(validationField)\" on object \(managedObject!.entity.name!))."
+                    }
+                }
+            } else if let validationField = userInfo[ "NSValidationErrorKey" ] as? String,
+                let object = userInfo[ "NSValidationErrorObject" ] as? NSManagedObject {
+                managedObject = object
+                message += "\n - Missing value for non-optional field \"\(validationField)\" on object \(managedObject!.entity.name!)."
             }
-            return selectedDatabase
-        } else if let defaultDatabase = defaultDatabase {
-            return defaultDatabase
-        } else {
-            fatalError("Failed to find default database.")
+            
+            assertionFailure(message + "\n\n")
         }
     }
-    
-    func add(database: Database, named databaseName: String) {
-        databasesByName[databaseName] = database
-        defaultDatabase = database
-    }
 }
 
-extension DatabaseSelector {
-    
-    static func defaultUrl(forDatabaseNamed name: String) -> URL {
-        let docsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return docsDirectory.appendingPathComponent(name)
-    }
-}
