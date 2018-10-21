@@ -17,11 +17,13 @@
 		783D592C217A011000347AD3 /* Dataase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC102179F7020065B378 /* Dataase.swift */; };
 		783D592D217A011000347AD3 /* DatabaseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC132179F7020065B378 /* DatabaseOperations.swift */; };
 		783D592E217A011000347AD3 /* IniitalizeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC142179F7020065B378 /* IniitalizeDatabase.swift */; };
-		783D592F217A011000347AD3 /* NSManagedObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC152179F7020065B378 /* NSManagedObject+.swift */; };
+		783D592F217A011000347AD3 /* NSManagedObjectContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC152179F7020065B378 /* NSManagedObjectContext+.swift */; };
 		783D5930217A011000347AD3 /* NSPredicate+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC122179F7020065B378 /* NSPredicate+.swift */; };
 		783D5931217A011000347AD3 /* NSOrderedSet+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC1C2179FAAF0065B378 /* NSOrderedSet+.swift */; };
 		783D5937217A034900347AD3 /* DatabaseSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783D5935217A033800347AD3 /* DatabaseSelector.swift */; };
 		78C8B7DB217A04B8007F502D /* LegacyCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8B7DA217A04B8007F502D /* LegacyCoreDataStack.swift */; };
+		78C8B7F3217C9B40007F502D /* NSManagedObjectContext+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8B7EF217C91C9007F502D /* NSManagedObjectContext+Identifier.swift */; };
+		78C8B7F5217C9B7E007F502D /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8B7F0217C91C9007F502D /* Identifier.swift */; };
 		7D3232A5116F22FC9F5650630E5A1DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26348DA1C8550DA0F6341D0E1304A388 /* Foundation.framework */; };
 		A32F395F23958B2BD3754814C75A895E /* Pods-CovertOpsData_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45084284065234DB9AF4336AAB290F62 /* Pods-CovertOpsData_Example-dummy.m */; };
 		A7DA7D12971DF3355D0F7236A6D51DF0 /* Observe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF4E318FE5137B8CDD2EB601AF369D /* Observe.swift */; };
@@ -105,9 +107,11 @@
 		78ACAC122179F7020065B378 /* NSPredicate+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSPredicate+.swift"; path = "CovertOpsData/Classes/NSPredicate+.swift"; sourceTree = "<group>"; };
 		78ACAC132179F7020065B378 /* DatabaseOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseOperations.swift; path = CovertOpsData/Classes/DatabaseOperations.swift; sourceTree = "<group>"; };
 		78ACAC142179F7020065B378 /* IniitalizeDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IniitalizeDatabase.swift; path = CovertOpsData/Classes/IniitalizeDatabase.swift; sourceTree = "<group>"; };
-		78ACAC152179F7020065B378 /* NSManagedObject+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+.swift"; path = "CovertOpsData/Classes/NSManagedObject+.swift"; sourceTree = "<group>"; };
+		78ACAC152179F7020065B378 /* NSManagedObjectContext+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+.swift"; path = "CovertOpsData/Classes/NSManagedObjectContext+.swift"; sourceTree = "<group>"; };
 		78ACAC1C2179FAAF0065B378 /* NSOrderedSet+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSOrderedSet+.swift"; path = "CovertOpsData/Classes/NSOrderedSet+.swift"; sourceTree = "<group>"; };
 		78C8B7DA217A04B8007F502D /* LegacyCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LegacyCoreDataStack.swift; path = CovertOpsData/Classes/LegacyCoreDataStack.swift; sourceTree = "<group>"; };
+		78C8B7EF217C91C9007F502D /* NSManagedObjectContext+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Identifier.swift"; path = "CovertOpsData/Classes/NSManagedObjectContext+Identifier.swift"; sourceTree = "<group>"; };
+		78C8B7F0217C91C9007F502D /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = CovertOpsData/Classes/Identifier.swift; sourceTree = "<group>"; };
 		78D5DFD81E9F349C5E87A6DA10583F29 /* Pods-CovertOpsData_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CovertOpsData_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7D512811A78401CB929CFBB3C2CF9A23 /* Pods-CovertOpsData_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CovertOpsData_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7E2F42B2016FBEFF16EDF0DAF17C58E8 /* Pods-CovertOpsData_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CovertOpsData_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,9 +181,11 @@
 				78ACAC102179F7020065B378 /* Dataase.swift */,
 				78ACAC132179F7020065B378 /* DatabaseOperations.swift */,
 				783D5935217A033800347AD3 /* DatabaseSelector.swift */,
+				78C8B7F0217C91C9007F502D /* Identifier.swift */,
 				78ACAC142179F7020065B378 /* IniitalizeDatabase.swift */,
 				78C8B7DA217A04B8007F502D /* LegacyCoreDataStack.swift */,
-				78ACAC152179F7020065B378 /* NSManagedObject+.swift */,
+				78ACAC152179F7020065B378 /* NSManagedObjectContext+.swift */,
+				78C8B7EF217C91C9007F502D /* NSManagedObjectContext+Identifier.swift */,
 				78ACAC1C2179FAAF0065B378 /* NSOrderedSet+.swift */,
 				78ACAC122179F7020065B378 /* NSPredicate+.swift */,
 				78ACAC112179F7020065B378 /* PersistentContainerStack.swift */,
@@ -542,15 +548,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C8B7F3217C9B40007F502D /* NSManagedObjectContext+Identifier.swift in Sources */,
 				783D592D217A011000347AD3 /* DatabaseOperations.swift in Sources */,
 				B3C23E5C8D3BC31B9C6351DED5C140EF /* CovertOpsData-dummy.m in Sources */,
 				78C8B7DB217A04B8007F502D /* LegacyCoreDataStack.swift in Sources */,
 				783D592C217A011000347AD3 /* Dataase.swift in Sources */,
 				783D5937217A034900347AD3 /* DatabaseSelector.swift in Sources */,
 				783D5931217A011000347AD3 /* NSOrderedSet+.swift in Sources */,
-				783D592F217A011000347AD3 /* NSManagedObject+.swift in Sources */,
+				783D592F217A011000347AD3 /* NSManagedObjectContext+.swift in Sources */,
 				783D592B217A011000347AD3 /* PersistentContainerStack.swift in Sources */,
 				783D592E217A011000347AD3 /* IniitalizeDatabase.swift in Sources */,
+				78C8B7F5217C9B7E007F502D /* Identifier.swift in Sources */,
 				783D5930217A011000347AD3 /* NSPredicate+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
