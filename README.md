@@ -1,4 +1,4 @@
-# CovertOpsData
+# ![CovertOpsData Logo](logo-covertops-data.png)
 
 [![CI Status](https://img.shields.io/travis/patricklynch/CovertOpsData.svg?style=flat)](https://travis-ci.org/patricklynch/CovertOpsData)
 [![Version](https://img.shields.io/cocoapods/v/CovertOpsData.svg?style=flat)](https://cocoapods.org/pods/CovertOpsData)
