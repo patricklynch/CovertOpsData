@@ -7,39 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D1FCCA3ADC34E15A12AFCF97493D0FF /* OperationQueue+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBD713CFFC3F37501021A0E28612E70 /* OperationQueue+.swift */; };
+		11DA6BC29EF15A2E15F87E91B7A3EDCC /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EB07D2E6D524A4A910503BF2212DE4 /* Array+.swift */; };
+		1DF727778D3BD366AC57BDC352DDD742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56AB205DF3090CC2085820F87C082BC /* Foundation.framework */; };
+		1EB929A1F3B96AD68DEB8C39CDAF1478 /* NSManagedObjectContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0DC833E648B8210595E2BFF924BE86 /* NSManagedObjectContext+.swift */; };
+		223C1D6F1599DF0ECB71809FEA5F9E97 /* DatabaseSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FDA5B7C97F3E2DF8D90D27C3D40377 /* DatabaseSelector.swift */; };
+		2290E2EA9F84D573ACE09BD24A29F2B7 /* QueuableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476A3AE26BB8F8B2C4F38C8F3C7E304 /* QueuableOperation.swift */; };
 		2944EACB0B710E5739EDC8B417538918 /* Pods-CovertOpsData_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50CEA594784E7AEAE3AF7AABE7E9764D /* Pods-CovertOpsData_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4441EC61AA6DE80B27D0C9165CEF83A3 /* CovertOpsData-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71DA69664FE1D4DDC67D04BA5ACE996E /* CovertOpsData-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D78C957A193620B697C68D7F1A07A78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26348DA1C8550DA0F6341D0E1304A388 /* Foundation.framework */; };
-		5568E88B08222E5A1FF03E02496887B5 /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDA5A11E516102A3ED6EB0E30D2926 /* Wait.swift */; };
+		2D0E18701E0BA2AA57450A1373585C6A /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBDA5A11E516102A3ED6EB0E30D2926 /* Wait.swift */; };
+		2DA5F4F365629D2B631CE9026C12EC1B /* Dataase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59EFF1E9A648240F73BEA7FB2F010E /* Dataase.swift */; };
+		33EE2BE9C949440EDABB8227F2279D8C /* CovertOps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500DE755E21F1862815B95E02BF6D0D7 /* CovertOps.framework */; };
+		3C1B7E18DAB0F823FDE79EB873D147B3 /* NSOrderedSet+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1ABA89D4339BD339043388AB2CF62 /* NSOrderedSet+.swift */; };
+		469F5596551FE3F90B6625D5DEF8FA27 /* OperationQueue+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBD713CFFC3F37501021A0E28612E70 /* OperationQueue+.swift */; };
+		4BA73B77A6E8D158E6F8443B78B9163F /* NSPredicate+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C69E70FCB26E463B11469B0651117C5 /* NSPredicate+.swift */; };
+		4BE5047D4FA506E3CA412B1B1C9EF8FF /* CompoundOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C23D0623F599CB7012E7294ABD863 /* CompoundOperation.swift */; };
+		5860DE90FF57B7B66E35F8803644A32E /* BlockUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CC563F6756000B3B2EDFE47177531 /* BlockUtilities.swift */; };
+		59D0489FB1ED8E647D10B3F2C67AC80E /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53192CF6FA565E3E2B0D4D67BEDCD470 /* Identifier.swift */; };
+		63E9FA6E27A72E77E1C8D83BF8E8CFC7 /* Observe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF4E318FE5137B8CDD2EB601AF369D /* Observe.swift */; };
+		6E8DFB33CFEFDE25BF320A35AD9A4F09 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDC6B0678D782C9853734E89A832417 /* AsyncOperation.swift */; };
 		6EECDF93CF05E081F3C584F0A1B7410C /* Pods-CovertOpsData_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 228693F99694B5F9E206A79853467AB5 /* Pods-CovertOpsData_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		783D592B217A011000347AD3 /* PersistentContainerStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC112179F7020065B378 /* PersistentContainerStack.swift */; };
-		783D592C217A011000347AD3 /* Dataase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC102179F7020065B378 /* Dataase.swift */; };
-		783D592D217A011000347AD3 /* DatabaseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC132179F7020065B378 /* DatabaseOperations.swift */; };
-		783D592E217A011000347AD3 /* IniitalizeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC142179F7020065B378 /* IniitalizeDatabase.swift */; };
-		783D592F217A011000347AD3 /* NSManagedObjectContext+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC152179F7020065B378 /* NSManagedObjectContext+.swift */; };
-		783D5930217A011000347AD3 /* NSPredicate+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC122179F7020065B378 /* NSPredicate+.swift */; };
-		783D5931217A011000347AD3 /* NSOrderedSet+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACAC1C2179FAAF0065B378 /* NSOrderedSet+.swift */; };
-		783D5937217A034900347AD3 /* DatabaseSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783D5935217A033800347AD3 /* DatabaseSelector.swift */; };
-		78C8B7DB217A04B8007F502D /* LegacyCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8B7DA217A04B8007F502D /* LegacyCoreDataStack.swift */; };
-		78C8B7F3217C9B40007F502D /* NSManagedObjectContext+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8B7EF217C91C9007F502D /* NSManagedObjectContext+Identifier.swift */; };
-		78C8B7F5217C9B7E007F502D /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8B7F0217C91C9007F502D /* Identifier.swift */; };
-		7D3232A5116F22FC9F5650630E5A1DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26348DA1C8550DA0F6341D0E1304A388 /* Foundation.framework */; };
+		70AFE32A340373C165575D12CE7471DF /* CovertOps-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A109D9AA16732C33D63910DF8DBAF62 /* CovertOps-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		734A4F431AF0C92690D5E77483EE707C /* IniitalizeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E807C0558F1FD264FA3723C0B4AE793 /* IniitalizeDatabase.swift */; };
+		7CF4137A1F6AC0392894F288AE514EB8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B6B450E5CB5FAA9501AB74B5A756BF /* CoreData.framework */; };
+		7D3232A5116F22FC9F5650630E5A1DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56AB205DF3090CC2085820F87C082BC /* Foundation.framework */; };
+		7E276E2B299E5693BE472ED518694A26 /* CovertOpsData-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CEA69193ADEA77AC96EA862BDDF12DE /* CovertOpsData-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9048D3E9B4F2E6E28F612F409537B66D /* PersistentContainerStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A2602F1707C6D7FEB0C5E192BCB013 /* PersistentContainerStack.swift */; };
+		986BCDA9157683490B032C9904489780 /* NSManagedObjectContext+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B641D069AABD31139A07A19807B8F1 /* NSManagedObjectContext+Identifier.swift */; };
+		9D345C51C114CD1692D38A46D1D3C9E0 /* CovertOps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9132572B9A7943DA0F3C55DC044C1127 /* CovertOps-dummy.m */; };
 		A32F395F23958B2BD3754814C75A895E /* Pods-CovertOpsData_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45084284065234DB9AF4336AAB290F62 /* Pods-CovertOpsData_Example-dummy.m */; };
-		A7DA7D12971DF3355D0F7236A6D51DF0 /* Observe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF4E318FE5137B8CDD2EB601AF369D /* Observe.swift */; };
-		A99C644F672405569FB2F2BF702733B6 /* CovertOps-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A109D9AA16732C33D63910DF8DBAF62 /* CovertOps-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3C23E5C8D3BC31B9C6351DED5C140EF /* CovertOpsData-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCB5F35BAD256535D454793D525ABE9 /* CovertOpsData-dummy.m */; };
-		B6A0F051D21F58B36A8273F0B0982818 /* CompoundOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C23D0623F599CB7012E7294ABD863 /* CompoundOperation.swift */; };
-		BB42F3390C7219EC4C7C3D9A0BBC0793 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDC6B0678D782C9853734E89A832417 /* AsyncOperation.swift */; };
-		CB868C82536D6689E09C96C0B0D4DA02 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EB07D2E6D524A4A910503BF2212DE4 /* Array+.swift */; };
-		CE57666041E5C369057BAC02140D40D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26348DA1C8550DA0F6341D0E1304A388 /* Foundation.framework */; };
-		DBE5154150123AA862A02ADFF8A9C719 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26348DA1C8550DA0F6341D0E1304A388 /* Foundation.framework */; };
-		E19337C3E016FD733174CEFD970B2702 /* CovertOps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9132572B9A7943DA0F3C55DC044C1127 /* CovertOps-dummy.m */; };
-		EC95694AB035C3DCC568609121064598 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE09FC3CC43AAC62FD2FCF0678AE1AF /* Repeat.swift */; };
-		EEA2B87B6AD1FF7ED846CB871173B052 /* BlockUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CC563F6756000B3B2EDFE47177531 /* BlockUtilities.swift */; };
-		F130BD43D0FFBE1BFDB9888BD69E7AB7 /* QueuableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476A3AE26BB8F8B2C4F38C8F3C7E304 /* QueuableOperation.swift */; };
-		FABFE11DFAB5D3ADF574A191F6114862 /* CovertOps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3FA9E557CCE8EFCA9EDAF940BF201D /* CovertOps.framework */; };
+		C70B30FA58B6BE769025F013004FC439 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE09FC3CC43AAC62FD2FCF0678AE1AF /* Repeat.swift */; };
+		CAC04971E414B78867828A49D85C611D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56AB205DF3090CC2085820F87C082BC /* Foundation.framework */; };
+		CE57666041E5C369057BAC02140D40D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56AB205DF3090CC2085820F87C082BC /* Foundation.framework */; };
+		D93DF33DE88691143F0BC89CE5E37E6C /* CovertOpsData-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 130D1BF0CC676989B654B38E270CEE01 /* CovertOpsData-dummy.m */; };
+		DC75F84367B95BF20DC9FDE748278FA1 /* DatabaseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC10807E4C4090E04CC1DECE9D2E585 /* DatabaseOperations.swift */; };
 		FAD93BA37A5BD50C5834D8D8A694F956 /* Pods-CovertOpsData_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5620DDB87D7FF52E48991F35A3FA332B /* Pods-CovertOpsData_Tests-dummy.m */; };
+		FC559D4A632EB4A1DF9EEF196EB43FC6 /* LegacyCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A4B143DAEC956DFEC966795D073D2F /* LegacyCoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D48079823DD7EDB26609B33F26EFC584;
+			remoteGlobalIDString = F15EB40D060E4CC190DC6CC4338339BE;
+			remoteInfo = CovertOps;
+		};
+		802914D542EA7844B131B5F3E4E18E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F15EB40D060E4CC190DC6CC4338339BE;
 			remoteInfo = CovertOps;
 		};
 		ACA3B286D7EBF4DEA432036B4FA96F17 /* PBXContainerItemProxy */ = {
@@ -61,79 +69,73 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E38CAA99B2D8E44071F32329C4D8055A;
+			remoteGlobalIDString = 651F32DA06EA8023D86B9C5120438B24;
 			remoteInfo = CovertOpsData;
-		};
-		DB809532A2662974856DEEA8D2E38789 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D48079823DD7EDB26609B33F26EFC584;
-			remoteInfo = CovertOps;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0476A3AE26BB8F8B2C4F38C8F3C7E304 /* QueuableOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueuableOperation.swift; path = CovertOps/Classes/QueuableOperation.swift; sourceTree = "<group>"; };
+		06B641D069AABD31139A07A19807B8F1 /* NSManagedObjectContext+Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Identifier.swift"; path = "CovertOpsData/Classes/NSManagedObjectContext+Identifier.swift"; sourceTree = "<group>"; };
+		0837D7F8DE4113C9D43D40AEFAAA8E97 /* CovertOpsData.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CovertOpsData.modulemap; sourceTree = "<group>"; };
+		130D1BF0CC676989B654B38E270CEE01 /* CovertOpsData-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CovertOpsData-dummy.m"; sourceTree = "<group>"; };
 		14CC70AA03995E96DE9A0D435B9E6D3C /* CovertOps.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CovertOps.modulemap; sourceTree = "<group>"; };
 		1B3C23D0623F599CB7012E7294ABD863 /* CompoundOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundOperation.swift; path = CovertOps/Classes/CompoundOperation.swift; sourceTree = "<group>"; };
-		1D3FA9E557CCE8EFCA9EDAF940BF201D /* CovertOps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CovertOps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		228693F99694B5F9E206A79853467AB5 /* Pods-CovertOpsData_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CovertOpsData_Tests-umbrella.h"; sourceTree = "<group>"; };
-		26348DA1C8550DA0F6341D0E1304A388 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2900335C4C76744D5A8F25BC1553C061 /* Pods-CovertOpsData_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CovertOpsData_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2E0E4C7C4BB59B25EA000EC21A1EA739 /* Pods-CovertOpsData_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CovertOpsData_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2E807C0558F1FD264FA3723C0B4AE793 /* IniitalizeDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IniitalizeDatabase.swift; path = CovertOpsData/Classes/IniitalizeDatabase.swift; sourceTree = "<group>"; };
 		357CF0900DABC8CE497E6EBB04A627E4 /* Pods-CovertOpsData_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CovertOpsData_Tests-resources.sh"; sourceTree = "<group>"; };
+		3B0DC833E648B8210595E2BFF924BE86 /* NSManagedObjectContext+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+.swift"; path = "CovertOpsData/Classes/NSManagedObjectContext+.swift"; sourceTree = "<group>"; };
 		3C2E3FD745EA5B69AF488825D7B620A9 /* Pods-CovertOpsData_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CovertOpsData_Tests.modulemap"; sourceTree = "<group>"; };
 		3DBD713CFFC3F37501021A0E28612E70 /* OperationQueue+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+.swift"; path = "CovertOps/Classes/OperationQueue+.swift"; sourceTree = "<group>"; };
 		3FE09FC3CC43AAC62FD2FCF0678AE1AF /* Repeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repeat.swift; path = CovertOps/Classes/Repeat.swift; sourceTree = "<group>"; };
 		45084284065234DB9AF4336AAB290F62 /* Pods-CovertOpsData_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CovertOpsData_Example-dummy.m"; sourceTree = "<group>"; };
-		45B24CE963E66E76A43670CE250FDD6A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4581085BE15E045BD0C7C204D513519D /* CovertOpsData.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CovertOpsData.xcconfig; sourceTree = "<group>"; };
 		47DED8CB36D1F96298F18016AB8B5024 /* CovertOps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CovertOps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C69E70FCB26E463B11469B0651117C5 /* NSPredicate+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSPredicate+.swift"; path = "CovertOpsData/Classes/NSPredicate+.swift"; sourceTree = "<group>"; };
 		4EB68842EEEE29AAC57D1C1F072B97E4 /* Pods-CovertOpsData_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CovertOpsData_Example-resources.sh"; sourceTree = "<group>"; };
 		4ED4611934B831F21F354570477500A8 /* Pods_CovertOpsData_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovertOpsData_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5000769848FFF56C3E5FCC006EF5E635 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		500DE755E21F1862815B95E02BF6D0D7 /* CovertOps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CovertOps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CEA594784E7AEAE3AF7AABE7E9764D /* Pods-CovertOpsData_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CovertOpsData_Example-umbrella.h"; sourceTree = "<group>"; };
 		5116F9B8A99D97DF46C6B82759D636C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53192CF6FA565E3E2B0D4D67BEDCD470 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = CovertOpsData/Classes/Identifier.swift; sourceTree = "<group>"; };
 		5620DDB87D7FF52E48991F35A3FA332B /* Pods-CovertOpsData_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CovertOpsData_Tests-dummy.m"; sourceTree = "<group>"; };
-		57B34BB476AA4F1F7FE012E4F54E665F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		57FDA5B7C97F3E2DF8D90D27C3D40377 /* DatabaseSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseSelector.swift; path = CovertOpsData/Classes/DatabaseSelector.swift; sourceTree = "<group>"; };
 		5832FE5C3B7D9A644D6D8D07533237A1 /* Pods-CovertOpsData_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CovertOpsData_Example.modulemap"; sourceTree = "<group>"; };
 		5B62A40453E0C32D487F988258229F9A /* Pods-CovertOpsData_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CovertOpsData_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6EBDB7AB8CACF33F2F2EA386F2608AFA /* CovertOpsData.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CovertOpsData.xcconfig; sourceTree = "<group>"; };
-		71DA69664FE1D4DDC67D04BA5ACE996E /* CovertOpsData-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CovertOpsData-umbrella.h"; sourceTree = "<group>"; };
+		61A4B143DAEC956DFEC966795D073D2F /* LegacyCoreDataStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyCoreDataStack.swift; path = CovertOpsData/Classes/LegacyCoreDataStack.swift; sourceTree = "<group>"; };
+		6CEA69193ADEA77AC96EA862BDDF12DE /* CovertOpsData-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CovertOpsData-umbrella.h"; sourceTree = "<group>"; };
 		72EB07D2E6D524A4A910503BF2212DE4 /* Array+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+.swift"; path = "CovertOps/Classes/Array+.swift"; sourceTree = "<group>"; };
-		783D5935217A033800347AD3 /* DatabaseSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseSelector.swift; path = CovertOpsData/Classes/DatabaseSelector.swift; sourceTree = "<group>"; };
-		78ACAC102179F7020065B378 /* Dataase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dataase.swift; path = CovertOpsData/Classes/Dataase.swift; sourceTree = "<group>"; };
-		78ACAC112179F7020065B378 /* PersistentContainerStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistentContainerStack.swift; path = CovertOpsData/Classes/PersistentContainerStack.swift; sourceTree = "<group>"; };
-		78ACAC122179F7020065B378 /* NSPredicate+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSPredicate+.swift"; path = "CovertOpsData/Classes/NSPredicate+.swift"; sourceTree = "<group>"; };
-		78ACAC132179F7020065B378 /* DatabaseOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseOperations.swift; path = CovertOpsData/Classes/DatabaseOperations.swift; sourceTree = "<group>"; };
-		78ACAC142179F7020065B378 /* IniitalizeDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IniitalizeDatabase.swift; path = CovertOpsData/Classes/IniitalizeDatabase.swift; sourceTree = "<group>"; };
-		78ACAC152179F7020065B378 /* NSManagedObjectContext+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+.swift"; path = "CovertOpsData/Classes/NSManagedObjectContext+.swift"; sourceTree = "<group>"; };
-		78ACAC1C2179FAAF0065B378 /* NSOrderedSet+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSOrderedSet+.swift"; path = "CovertOpsData/Classes/NSOrderedSet+.swift"; sourceTree = "<group>"; };
-		78C8B7DA217A04B8007F502D /* LegacyCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LegacyCoreDataStack.swift; path = CovertOpsData/Classes/LegacyCoreDataStack.swift; sourceTree = "<group>"; };
-		78C8B7EF217C91C9007F502D /* NSManagedObjectContext+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Identifier.swift"; path = "CovertOpsData/Classes/NSManagedObjectContext+Identifier.swift"; sourceTree = "<group>"; };
-		78C8B7F0217C91C9007F502D /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = CovertOpsData/Classes/Identifier.swift; sourceTree = "<group>"; };
 		78D5DFD81E9F349C5E87A6DA10583F29 /* Pods-CovertOpsData_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CovertOpsData_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7D512811A78401CB929CFBB3C2CF9A23 /* Pods-CovertOpsData_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CovertOpsData_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7E2F42B2016FBEFF16EDF0DAF17C58E8 /* Pods-CovertOpsData_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CovertOpsData_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		86829DF9842C22FF26B851D8167E062B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89845F649E447BF965863B05F08DAF88 /* Pods-CovertOpsData_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CovertOpsData_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		89CA976DA7D066E882C909B6545B2C0C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8A109D9AA16732C33D63910DF8DBAF62 /* CovertOps-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CovertOps-umbrella.h"; sourceTree = "<group>"; };
+		8D59EFF1E9A648240F73BEA7FB2F010E /* Dataase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dataase.swift; path = CovertOpsData/Classes/Dataase.swift; sourceTree = "<group>"; };
 		8DAF4E318FE5137B8CDD2EB601AF369D /* Observe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observe.swift; path = CovertOps/Classes/Observe.swift; sourceTree = "<group>"; };
+		8F29738E5714F78A93388BD5F1E1F07A /* CovertOpsData-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CovertOpsData-prefix.pch"; sourceTree = "<group>"; };
 		9132572B9A7943DA0F3C55DC044C1127 /* CovertOps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CovertOps-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9670910D4CF190293833100B7D043471 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A14C27F27FCE88B0ED22F4ED2FA526DC /* CovertOpsData.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = CovertOpsData.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4EF34FA88C35C48716470C695A31183 /* Pods-CovertOpsData_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CovertOpsData_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AB5F994F0B060DF2FE9D9D0B33E23B3A /* CovertOpsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CovertOpsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1FB39584EBD84DB5A5AE81F5DA76BEB /* CovertOpsData-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CovertOpsData-prefix.pch"; sourceTree = "<group>"; };
+		B3A2602F1707C6D7FEB0C5E192BCB013 /* PersistentContainerStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistentContainerStack.swift; path = CovertOpsData/Classes/PersistentContainerStack.swift; sourceTree = "<group>"; };
+		B3CB04DC944BDA09E2DFAFB7B6576A7C /* CovertOpsData.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = CovertOpsData.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B4B1ABA89D4339BD339043388AB2CF62 /* NSOrderedSet+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSOrderedSet+.swift"; path = "CovertOpsData/Classes/NSOrderedSet+.swift"; sourceTree = "<group>"; };
 		B91FBCB29F092FE9A60DACF6BAF2CB7A /* CovertOps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CovertOps.xcconfig; sourceTree = "<group>"; };
 		BC5AAA8DD779EB6D3A0175334CC1C596 /* Pods-CovertOpsData_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CovertOpsData_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BEC10807E4C4090E04CC1DECE9D2E585 /* DatabaseOperations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseOperations.swift; path = CovertOpsData/Classes/DatabaseOperations.swift; sourceTree = "<group>"; };
+		BEC3EDC45B1131EDC1349C1E4E0D7E63 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CBBDA5A11E516102A3ED6EB0E30D2926 /* Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wait.swift; path = CovertOps/Classes/Wait.swift; sourceTree = "<group>"; };
 		D84CC563F6756000B3B2EDFE47177531 /* BlockUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockUtilities.swift; path = CovertOps/Classes/BlockUtilities.swift; sourceTree = "<group>"; };
-		D8E72BFE41A406FABE5E2F1CBA2142A4 /* CovertOpsData.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CovertOpsData.modulemap; sourceTree = "<group>"; };
 		D9AE795586AF4058F5AD32A181C8D7E5 /* Pods-CovertOpsData_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CovertOpsData_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DDCB5F35BAD256535D454793D525ABE9 /* CovertOpsData-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CovertOpsData-dummy.m"; sourceTree = "<group>"; };
 		DF1E44A36657C1EBE645E1A3A234E8E3 /* Pods_CovertOpsData_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovertOpsData_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B6B450E5CB5FAA9501AB74B5A756BF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		E56AB205DF3090CC2085820F87C082BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EC1683C6691B30AD1DD2BC76DE8F4886 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFDC6B0678D782C9853734E89A832417 /* AsyncOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncOperation.swift; path = CovertOps/Classes/AsyncOperation.swift; sourceTree = "<group>"; };
 		F005FD30CEC7E284665AEA3B2067125A /* CovertOps-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CovertOps-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,23 +149,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		07F6D852429ACC26DFA478FF3B0CA351 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DBE5154150123AA862A02ADFF8A9C719 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F5020864735F556F4BA57FCD0A0F825 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FABFE11DFAB5D3ADF574A191F6114862 /* CovertOps.framework in Frameworks */,
-				4D78C957A193620B697C68D7F1A07A78 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2D0FFC4F28E0EB081A0975F3AB91F81B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,28 +157,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67B038C29CC78E3D2DA612336F8712EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EE2BE9C949440EDABB8227F2279D8C /* CovertOps.framework in Frameworks */,
+				1DF727778D3BD366AC57BDC352DDD742 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3222424A135DC6C753F3449EFD8D5E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF4137A1F6AC0392894F288AE514EB8 /* CoreData.framework in Frameworks */,
+				CAC04971E414B78867828A49D85C611D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D0D932D10D267A85068E2403710CAD5 /* CovertOpsData */ = {
+		1DC4D42B48D01885C18FC352733C95E2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				78ACAC102179F7020065B378 /* Dataase.swift */,
-				78ACAC132179F7020065B378 /* DatabaseOperations.swift */,
-				783D5935217A033800347AD3 /* DatabaseSelector.swift */,
-				78C8B7F0217C91C9007F502D /* Identifier.swift */,
-				78ACAC142179F7020065B378 /* IniitalizeDatabase.swift */,
-				78C8B7DA217A04B8007F502D /* LegacyCoreDataStack.swift */,
-				78ACAC152179F7020065B378 /* NSManagedObjectContext+.swift */,
-				78C8B7EF217C91C9007F502D /* NSManagedObjectContext+Identifier.swift */,
-				78ACAC1C2179FAAF0065B378 /* NSOrderedSet+.swift */,
-				78ACAC122179F7020065B378 /* NSPredicate+.swift */,
-				78ACAC112179F7020065B378 /* PersistentContainerStack.swift */,
-				D4AA952BE1EEA33CE54668DD65943A80 /* Pod */,
-				F788F0A419C6C8965B327D5D78C70602 /* Support Files */,
+				0837D7F8DE4113C9D43D40AEFAAA8E97 /* CovertOpsData.modulemap */,
+				4581085BE15E045BD0C7C204D513519D /* CovertOpsData.xcconfig */,
+				130D1BF0CC676989B654B38E270CEE01 /* CovertOpsData-dummy.m */,
+				8F29738E5714F78A93388BD5F1E1F07A /* CovertOpsData-prefix.pch */,
+				6CEA69193ADEA77AC96EA862BDDF12DE /* CovertOpsData-umbrella.h */,
+				EC1683C6691B30AD1DD2BC76DE8F4886 /* Info.plist */,
 			);
-			name = CovertOpsData;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CovertOpsData";
 			sourceTree = "<group>";
 		};
 		2655A5DD65907502449EFEF077B6CAAA /* Support Files */ = {
@@ -208,14 +204,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CovertOps";
-			sourceTree = "<group>";
-		};
-		32A61376E3B9819FD8B0A4D5070993BF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				26348DA1C8550DA0F6341D0E1304A388 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		54C1FEC002428478C5E3EE016B33994B /* Targets Support Files */ = {
@@ -253,6 +241,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		72F0493E14F6E92EE8E159BA2416CC60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6B450E5CB5FAA9501AB74B5A756BF /* CoreData.framework */,
+				E56AB205DF3090CC2085820F87C082BC /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7831015F39F6FD2BAD7EA9A0F4546282 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B3CB04DC944BDA09E2DFAFB7B6576A7C /* CovertOpsData.podspec */,
+				89CA976DA7D066E882C909B6545B2C0C /* LICENSE */,
+				BEC3EDC45B1131EDC1349C1E4E0D7E63 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		7C75D0A84DDB67B39AD93AEB9F9AC9D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,39 +275,50 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				998BE0C1CF8C23358203686E17D796FE /* Development Pods */,
-				8148C9A2792DF97090920007ACDE0033 /* Frameworks */,
+				D4E4E8C6454DE6482FA439168A52CAA4 /* Development Pods */,
+				C832E23733CF1293995F95A44340AC00 /* Frameworks */,
 				65C51217DA1EBE80E82EA7514243D0E7 /* Pods */,
 				7C75D0A84DDB67B39AD93AEB9F9AC9D2 /* Products */,
 				54C1FEC002428478C5E3EE016B33994B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8148C9A2792DF97090920007ACDE0033 /* Frameworks */ = {
+		A10FA630911F243060CEC9D6BB4F07FE /* CovertOpsData */ = {
 			isa = PBXGroup;
 			children = (
-				1D3FA9E557CCE8EFCA9EDAF940BF201D /* CovertOps.framework */,
-				32A61376E3B9819FD8B0A4D5070993BF /* iOS */,
+				8D59EFF1E9A648240F73BEA7FB2F010E /* Dataase.swift */,
+				BEC10807E4C4090E04CC1DECE9D2E585 /* DatabaseOperations.swift */,
+				57FDA5B7C97F3E2DF8D90D27C3D40377 /* DatabaseSelector.swift */,
+				53192CF6FA565E3E2B0D4D67BEDCD470 /* Identifier.swift */,
+				2E807C0558F1FD264FA3723C0B4AE793 /* IniitalizeDatabase.swift */,
+				61A4B143DAEC956DFEC966795D073D2F /* LegacyCoreDataStack.swift */,
+				3B0DC833E648B8210595E2BFF924BE86 /* NSManagedObjectContext+.swift */,
+				06B641D069AABD31139A07A19807B8F1 /* NSManagedObjectContext+Identifier.swift */,
+				B4B1ABA89D4339BD339043388AB2CF62 /* NSOrderedSet+.swift */,
+				4C69E70FCB26E463B11469B0651117C5 /* NSPredicate+.swift */,
+				B3A2602F1707C6D7FEB0C5E192BCB013 /* PersistentContainerStack.swift */,
+				7831015F39F6FD2BAD7EA9A0F4546282 /* Pod */,
+				1DC4D42B48D01885C18FC352733C95E2 /* Support Files */,
+			);
+			name = CovertOpsData;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C832E23733CF1293995F95A44340AC00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				500DE755E21F1862815B95E02BF6D0D7 /* CovertOps.framework */,
+				72F0493E14F6E92EE8E159BA2416CC60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		998BE0C1CF8C23358203686E17D796FE /* Development Pods */ = {
+		D4E4E8C6454DE6482FA439168A52CAA4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0D0D932D10D267A85068E2403710CAD5 /* CovertOpsData */,
+				A10FA630911F243060CEC9D6BB4F07FE /* CovertOpsData */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		D4AA952BE1EEA33CE54668DD65943A80 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A14C27F27FCE88B0ED22F4ED2FA526DC /* CovertOpsData.podspec */,
-				45B24CE963E66E76A43670CE250FDD6A /* LICENSE */,
-				57B34BB476AA4F1F7FE012E4F54E665F /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		D5F507987288B9E0C8CF373008F5F8A4 /* CovertOps */ = {
@@ -338,20 +356,6 @@
 			path = "Target Support Files/Pods-CovertOpsData_Tests";
 			sourceTree = "<group>";
 		};
-		F788F0A419C6C8965B327D5D78C70602 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D8E72BFE41A406FABE5E2F1CBA2142A4 /* CovertOpsData.modulemap */,
-				6EBDB7AB8CACF33F2F2EA386F2608AFA /* CovertOpsData.xcconfig */,
-				DDCB5F35BAD256535D454793D525ABE9 /* CovertOpsData-dummy.m */,
-				B1FB39584EBD84DB5A5AE81F5DA76BEB /* CovertOpsData-prefix.pch */,
-				71DA69664FE1D4DDC67D04BA5ACE996E /* CovertOpsData-umbrella.h */,
-				5000769848FFF56C3E5FCC006EF5E635 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CovertOpsData";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -371,19 +375,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65C75A3652374A331B0A265ACBC53FB6 /* Headers */ = {
+		AC44F4B7DB9D63C77368E0003C7323E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A99C644F672405569FB2F2BF702733B6 /* CovertOps-umbrella.h in Headers */,
+				7E276E2B299E5693BE472ED518694A26 /* CovertOpsData-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1486610E9B858CB22CBE3F0ADCE6927 /* Headers */ = {
+		BE7C7FA8BDBF149B57F94162BB9803B1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4441EC61AA6DE80B27D0C9165CEF83A3 /* CovertOpsData-umbrella.h in Headers */,
+				70AFE32A340373C165575D12CE7471DF /* CovertOps-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,25 @@
 			productReference = 4ED4611934B831F21F354570477500A8 /* Pods_CovertOpsData_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		651F32DA06EA8023D86B9C5120438B24 /* CovertOpsData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76034A412E939DEE1D2FA3733379E8FA /* Build configuration list for PBXNativeTarget "CovertOpsData" */;
+			buildPhases = (
+				AC44F4B7DB9D63C77368E0003C7323E9 /* Headers */,
+				27694A153BCC402548E761C9DAC4BD27 /* Sources */,
+				67B038C29CC78E3D2DA612336F8712EE /* Frameworks */,
+				052A70AF3A7812DB1DF1D0C35C233468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AADF6AA69FDBF342C615BDD46662B552 /* PBXTargetDependency */,
+			);
+			name = CovertOpsData;
+			productName = CovertOpsData;
+			productReference = AB5F994F0B060DF2FE9D9D0B33E23B3A /* CovertOpsData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		92B8550E6CF58BA0ED5E5BAD9A0957B1 /* Pods-CovertOpsData_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8EFE91A890DF752BA146C0053378CDC /* Build configuration list for PBXNativeTarget "Pods-CovertOpsData_Example" */;
@@ -429,14 +452,14 @@
 			productReference = DF1E44A36657C1EBE645E1A3A234E8E3 /* Pods_CovertOpsData_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D48079823DD7EDB26609B33F26EFC584 /* CovertOps */ = {
+		F15EB40D060E4CC190DC6CC4338339BE /* CovertOps */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0EEEC8C2FCB4ED4C429E589D5D0EEB1 /* Build configuration list for PBXNativeTarget "CovertOps" */;
+			buildConfigurationList = 508BC5342894BCAE6FE526AB75EAF667 /* Build configuration list for PBXNativeTarget "CovertOps" */;
 			buildPhases = (
-				65C75A3652374A331B0A265ACBC53FB6 /* Headers */,
-				595A34DA806264F662C3A44F7F84F58D /* Sources */,
-				07F6D852429ACC26DFA478FF3B0CA351 /* Frameworks */,
-				085F8EC14ABE0BCFED1247AAB920CD73 /* Resources */,
+				BE7C7FA8BDBF149B57F94162BB9803B1 /* Headers */,
+				DDCE4386DBC6F9E9AF3BE3297AF278C4 /* Sources */,
+				E3222424A135DC6C753F3449EFD8D5E6 /* Frameworks */,
+				A52DBE5E37C3C3620C0250E858065C1F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -445,25 +468,6 @@
 			name = CovertOps;
 			productName = CovertOps;
 			productReference = 47DED8CB36D1F96298F18016AB8B5024 /* CovertOps.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E38CAA99B2D8E44071F32329C4D8055A /* CovertOpsData */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8D4886A5700CD6639366EB0B0F0FD9D /* Build configuration list for PBXNativeTarget "CovertOpsData" */;
-			buildPhases = (
-				F1486610E9B858CB22CBE3F0ADCE6927 /* Headers */,
-				5B63C2650C911A7A3E68BB44DB5E27E2 /* Sources */,
-				1F5020864735F556F4BA57FCD0A0F825 /* Frameworks */,
-				4B5151760B252F347BAA4EC728A1FA23 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3797566613E83ECE9920522AD662D0D4 /* PBXTargetDependency */,
-			);
-			name = CovertOpsData;
-			productName = CovertOpsData;
-			productReference = AB5F994F0B060DF2FE9D9D0B33E23B3A /* CovertOpsData.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -487,8 +491,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D48079823DD7EDB26609B33F26EFC584 /* CovertOps */,
-				E38CAA99B2D8E44071F32329C4D8055A /* CovertOpsData */,
+				F15EB40D060E4CC190DC6CC4338339BE /* CovertOps */,
+				651F32DA06EA8023D86B9C5120438B24 /* CovertOpsData */,
 				92B8550E6CF58BA0ED5E5BAD9A0957B1 /* Pods-CovertOpsData_Example */,
 				2ED2A914B9F90D8CDFAB60CAD83B3E55 /* Pods-CovertOpsData_Tests */,
 			);
@@ -496,14 +500,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		085F8EC14ABE0BCFED1247AAB920CD73 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4B5151760B252F347BAA4EC728A1FA23 /* Resources */ = {
+		052A70AF3A7812DB1DF1D0C35C233468 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -511,6 +508,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6D160DBC24903F7594D813411E918540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52DBE5E37C3C3620C0250E858065C1F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -527,39 +531,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		595A34DA806264F662C3A44F7F84F58D /* Sources */ = {
+		27694A153BCC402548E761C9DAC4BD27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB868C82536D6689E09C96C0B0D4DA02 /* Array+.swift in Sources */,
-				BB42F3390C7219EC4C7C3D9A0BBC0793 /* AsyncOperation.swift in Sources */,
-				EEA2B87B6AD1FF7ED846CB871173B052 /* BlockUtilities.swift in Sources */,
-				B6A0F051D21F58B36A8273F0B0982818 /* CompoundOperation.swift in Sources */,
-				E19337C3E016FD733174CEFD970B2702 /* CovertOps-dummy.m in Sources */,
-				A7DA7D12971DF3355D0F7236A6D51DF0 /* Observe.swift in Sources */,
-				1D1FCCA3ADC34E15A12AFCF97493D0FF /* OperationQueue+.swift in Sources */,
-				F130BD43D0FFBE1BFDB9888BD69E7AB7 /* QueuableOperation.swift in Sources */,
-				EC95694AB035C3DCC568609121064598 /* Repeat.swift in Sources */,
-				5568E88B08222E5A1FF03E02496887B5 /* Wait.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B63C2650C911A7A3E68BB44DB5E27E2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78C8B7F3217C9B40007F502D /* NSManagedObjectContext+Identifier.swift in Sources */,
-				783D592D217A011000347AD3 /* DatabaseOperations.swift in Sources */,
-				B3C23E5C8D3BC31B9C6351DED5C140EF /* CovertOpsData-dummy.m in Sources */,
-				78C8B7DB217A04B8007F502D /* LegacyCoreDataStack.swift in Sources */,
-				783D592C217A011000347AD3 /* Dataase.swift in Sources */,
-				783D5937217A034900347AD3 /* DatabaseSelector.swift in Sources */,
-				783D5931217A011000347AD3 /* NSOrderedSet+.swift in Sources */,
-				783D592F217A011000347AD3 /* NSManagedObjectContext+.swift in Sources */,
-				783D592B217A011000347AD3 /* PersistentContainerStack.swift in Sources */,
-				783D592E217A011000347AD3 /* IniitalizeDatabase.swift in Sources */,
-				78C8B7F5217C9B7E007F502D /* Identifier.swift in Sources */,
-				783D5930217A011000347AD3 /* NSPredicate+.swift in Sources */,
+				D93DF33DE88691143F0BC89CE5E37E6C /* CovertOpsData-dummy.m in Sources */,
+				2DA5F4F365629D2B631CE9026C12EC1B /* Dataase.swift in Sources */,
+				DC75F84367B95BF20DC9FDE748278FA1 /* DatabaseOperations.swift in Sources */,
+				223C1D6F1599DF0ECB71809FEA5F9E97 /* DatabaseSelector.swift in Sources */,
+				59D0489FB1ED8E647D10B3F2C67AC80E /* Identifier.swift in Sources */,
+				734A4F431AF0C92690D5E77483EE707C /* IniitalizeDatabase.swift in Sources */,
+				FC559D4A632EB4A1DF9EEF196EB43FC6 /* LegacyCoreDataStack.swift in Sources */,
+				1EB929A1F3B96AD68DEB8C39CDAF1478 /* NSManagedObjectContext+.swift in Sources */,
+				986BCDA9157683490B032C9904489780 /* NSManagedObjectContext+Identifier.swift in Sources */,
+				3C1B7E18DAB0F823FDE79EB873D147B3 /* NSOrderedSet+.swift in Sources */,
+				4BA73B77A6E8D158E6F8443B78B9163F /* NSPredicate+.swift in Sources */,
+				9048D3E9B4F2E6E28F612F409537B66D /* PersistentContainerStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +555,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD93BA37A5BD50C5834D8D8A694F956 /* Pods-CovertOpsData_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCE4386DBC6F9E9AF3BE3297AF278C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11DA6BC29EF15A2E15F87E91B7A3EDCC /* Array+.swift in Sources */,
+				6E8DFB33CFEFDE25BF320A35AD9A4F09 /* AsyncOperation.swift in Sources */,
+				5860DE90FF57B7B66E35F8803644A32E /* BlockUtilities.swift in Sources */,
+				4BE5047D4FA506E3CA412B1B1C9EF8FF /* CompoundOperation.swift in Sources */,
+				9D345C51C114CD1692D38A46D1D3C9E0 /* CovertOps-dummy.m in Sources */,
+				63E9FA6E27A72E77E1C8D83BF8E8CFC7 /* Observe.swift in Sources */,
+				469F5596551FE3F90B6625D5DEF8FA27 /* OperationQueue+.swift in Sources */,
+				2290E2EA9F84D573ACE09BD24A29F2B7 /* QueuableOperation.swift in Sources */,
+				C70B30FA58B6BE769025F013004FC439 /* Repeat.swift in Sources */,
+				2D0E18701E0BA2AA57450A1373585C6A /* Wait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,20 +589,20 @@
 		25AEA581E51EF122DF8FB4433048CE75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CovertOps;
-			target = D48079823DD7EDB26609B33F26EFC584 /* CovertOps */;
+			target = F15EB40D060E4CC190DC6CC4338339BE /* CovertOps */;
 			targetProxy = 3020CAF0AB35C716C950EF472F34CD3E /* PBXContainerItemProxy */;
-		};
-		3797566613E83ECE9920522AD662D0D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CovertOps;
-			target = D48079823DD7EDB26609B33F26EFC584 /* CovertOps */;
-			targetProxy = DB809532A2662974856DEEA8D2E38789 /* PBXContainerItemProxy */;
 		};
 		51F7F61BEA98B5B34B12F8C8D0664B73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CovertOpsData;
-			target = E38CAA99B2D8E44071F32329C4D8055A /* CovertOpsData */;
+			target = 651F32DA06EA8023D86B9C5120438B24 /* CovertOpsData */;
 			targetProxy = AF452F983FB43CD9D228344FAF36B8C1 /* PBXContainerItemProxy */;
+		};
+		AADF6AA69FDBF342C615BDD46662B552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CovertOps;
+			target = F15EB40D060E4CC190DC6CC4338339BE /* CovertOps */;
+			targetProxy = 802914D542EA7844B131B5F3E4E18E4F /* PBXContainerItemProxy */;
 		};
 		F565947137310676489CA8988EBFFADC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -609,9 +613,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		38B8A15E95C120B87F278A645908C422 /* Debug */ = {
+		2240341C4EF4BB418B1A8DB545EC8E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EBDB7AB8CACF33F2F2EA386F2608AFA /* CovertOpsData.xcconfig */;
+			baseConfigurationReference = B91FBCB29F092FE9A60DACF6BAF2CB7A /* CovertOps.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -622,19 +626,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CovertOpsData/CovertOpsData-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CovertOpsData/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CovertOps/CovertOps-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CovertOps/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CovertOpsData/CovertOpsData.modulemap";
-				PRODUCT_MODULE_NAME = CovertOpsData;
-				PRODUCT_NAME = CovertOpsData;
+				MODULEMAP_FILE = "Target Support Files/CovertOps/CovertOps.modulemap";
+				PRODUCT_MODULE_NAME = CovertOps;
+				PRODUCT_NAME = CovertOps;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -734,9 +738,9 @@
 			};
 			name = Release;
 		};
-		891CC2DDF8A892D29289F82D81D5CAB6 /* Release */ = {
+		86373F84E4D0B72F4E766A3DA90AFF56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EBDB7AB8CACF33F2F2EA386F2608AFA /* CovertOpsData.xcconfig */;
+			baseConfigurationReference = B91FBCB29F092FE9A60DACF6BAF2CB7A /* CovertOps.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -747,19 +751,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CovertOpsData/CovertOpsData-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CovertOpsData/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CovertOps/CovertOps-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CovertOps/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CovertOpsData/CovertOpsData.modulemap";
-				PRODUCT_MODULE_NAME = CovertOpsData;
-				PRODUCT_NAME = CovertOpsData;
+				MODULEMAP_FILE = "Target Support Files/CovertOps/CovertOps.modulemap";
+				PRODUCT_MODULE_NAME = CovertOps;
+				PRODUCT_NAME = CovertOps;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -801,39 +805,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		A57C1B77A48C0F1C1FCCBF10DA0CFBB0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B91FBCB29F092FE9A60DACF6BAF2CB7A /* CovertOps.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CovertOps/CovertOps-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CovertOps/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CovertOps/CovertOps.modulemap";
-				PRODUCT_MODULE_NAME = CovertOps;
-				PRODUCT_NAME = CovertOps;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -899,9 +870,9 @@
 			};
 			name = Debug;
 		};
-		DC9376273C4E7C37F58135DD1FCFBA6E /* Debug */ = {
+		D3FDE4AE003A184933C94F324C3A042E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B91FBCB29F092FE9A60DACF6BAF2CB7A /* CovertOps.xcconfig */;
+			baseConfigurationReference = 4581085BE15E045BD0C7C204D513519D /* CovertOpsData.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -912,24 +883,25 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CovertOps/CovertOps-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CovertOps/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CovertOpsData/CovertOpsData-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CovertOpsData/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CovertOps/CovertOps.modulemap";
-				PRODUCT_MODULE_NAME = CovertOps;
-				PRODUCT_NAME = CovertOps;
+				MODULEMAP_FILE = "Target Support Files/CovertOpsData/CovertOpsData.modulemap";
+				PRODUCT_MODULE_NAME = CovertOpsData;
+				PRODUCT_NAME = CovertOpsData;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		DCE591272D76D41792DF87CF8B31C21C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -964,6 +936,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		EA9A55B3240B554157378522BDF2CA22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4581085BE15E045BD0C7C204D513519D /* CovertOpsData.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CovertOpsData/CovertOpsData-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CovertOpsData/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CovertOpsData/CovertOpsData.modulemap";
+				PRODUCT_MODULE_NAME = CovertOpsData;
+				PRODUCT_NAME = CovertOpsData;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		F1A62B44A2C425080D905AB3778BC101 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1012,20 +1016,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0EEEC8C2FCB4ED4C429E589D5D0EEB1 /* Build configuration list for PBXNativeTarget "CovertOps" */ = {
+		508BC5342894BCAE6FE526AB75EAF667 /* Build configuration list for PBXNativeTarget "CovertOps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC9376273C4E7C37F58135DD1FCFBA6E /* Debug */,
-				A57C1B77A48C0F1C1FCCBF10DA0CFBB0 /* Release */,
+				2240341C4EF4BB418B1A8DB545EC8E4A /* Debug */,
+				86373F84E4D0B72F4E766A3DA90AFF56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8D4886A5700CD6639366EB0B0F0FD9D /* Build configuration list for PBXNativeTarget "CovertOpsData" */ = {
+		76034A412E939DEE1D2FA3733379E8FA /* Build configuration list for PBXNativeTarget "CovertOpsData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38B8A15E95C120B87F278A645908C422 /* Debug */,
-				891CC2DDF8A892D29289F82D81D5CAB6 /* Release */,
+				EA9A55B3240B554157378522BDF2CA22 /* Debug */,
+				D3FDE4AE003A184933C94F324C3A042E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

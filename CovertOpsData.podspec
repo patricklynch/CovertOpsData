@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CovertOpsData'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'An extension of the `CovertOps` pod which includes a compatible CoreData expansion pack.'
 
 # This description is used to generate tags and improve search results.
