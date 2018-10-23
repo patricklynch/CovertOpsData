@@ -27,7 +27,7 @@ github "patricklynch/CovertOpsData"
 
 ## Author
 
-patricklynch, pdlynch@gmail.com
+Patrick Lynch: pdlynch@gmail.com
 
 ## License
 
