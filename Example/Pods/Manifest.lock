@@ -1,5 +1,5 @@
 PODS:
-  - CovertOps (0.1.3)
+  - CovertOps (0.1.5)
   - CovertOpsData (0.1.4):
     - CovertOps
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CovertOps: 22cebfcfca23aff7e4c9c33226534966ae98470a
+  CovertOps: 274476bb1609bb6f1bd9d0c10938cb656786249e
   CovertOpsData: 537000d938cca16d3bb15c2d1cd0320b3d44eae8
 
 PODFILE CHECKSUM: 2874e778c0a49d7487b0f0148fb7d737daa59188

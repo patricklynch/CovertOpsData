@@ -92,10 +92,10 @@
 		3FE09FC3CC43AAC62FD2FCF0678AE1AF /* Repeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repeat.swift; path = CovertOps/Classes/Repeat.swift; sourceTree = "<group>"; };
 		45084284065234DB9AF4336AAB290F62 /* Pods-CovertOpsData_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CovertOpsData_Example-dummy.m"; sourceTree = "<group>"; };
 		4581085BE15E045BD0C7C204D513519D /* CovertOpsData.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CovertOpsData.xcconfig; sourceTree = "<group>"; };
-		47DED8CB36D1F96298F18016AB8B5024 /* CovertOps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CovertOps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47DED8CB36D1F96298F18016AB8B5024 /* CovertOps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CovertOps.framework; path = CovertOps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C69E70FCB26E463B11469B0651117C5 /* NSPredicate+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSPredicate+.swift"; path = "CovertOpsData/Classes/NSPredicate+.swift"; sourceTree = "<group>"; };
 		4EB68842EEEE29AAC57D1C1F072B97E4 /* Pods-CovertOpsData_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CovertOpsData_Example-resources.sh"; sourceTree = "<group>"; };
-		4ED4611934B831F21F354570477500A8 /* Pods_CovertOpsData_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovertOpsData_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED4611934B831F21F354570477500A8 /* Pods_CovertOpsData_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CovertOpsData_Tests.framework; path = "Pods-CovertOpsData_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		500DE755E21F1862815B95E02BF6D0D7 /* CovertOps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CovertOps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CEA594784E7AEAE3AF7AABE7E9764D /* Pods-CovertOpsData_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CovertOpsData_Example-umbrella.h"; sourceTree = "<group>"; };
 		5116F9B8A99D97DF46C6B82759D636C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,27 +112,27 @@
 		7E2F42B2016FBEFF16EDF0DAF17C58E8 /* Pods-CovertOpsData_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CovertOpsData_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		86829DF9842C22FF26B851D8167E062B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89845F649E447BF965863B05F08DAF88 /* Pods-CovertOpsData_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CovertOpsData_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		89CA976DA7D066E882C909B6545B2C0C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		89CA976DA7D066E882C909B6545B2C0C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		8A109D9AA16732C33D63910DF8DBAF62 /* CovertOps-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CovertOps-umbrella.h"; sourceTree = "<group>"; };
 		8D59EFF1E9A648240F73BEA7FB2F010E /* Dataase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dataase.swift; path = CovertOpsData/Classes/Dataase.swift; sourceTree = "<group>"; };
 		8DAF4E318FE5137B8CDD2EB601AF369D /* Observe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observe.swift; path = CovertOps/Classes/Observe.swift; sourceTree = "<group>"; };
 		8F29738E5714F78A93388BD5F1E1F07A /* CovertOpsData-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CovertOpsData-prefix.pch"; sourceTree = "<group>"; };
 		9132572B9A7943DA0F3C55DC044C1127 /* CovertOps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CovertOps-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9670910D4CF190293833100B7D043471 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4EF34FA88C35C48716470C695A31183 /* Pods-CovertOpsData_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CovertOpsData_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AB5F994F0B060DF2FE9D9D0B33E23B3A /* CovertOpsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CovertOpsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5F994F0B060DF2FE9D9D0B33E23B3A /* CovertOpsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CovertOpsData.framework; path = CovertOpsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A2602F1707C6D7FEB0C5E192BCB013 /* PersistentContainerStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistentContainerStack.swift; path = CovertOpsData/Classes/PersistentContainerStack.swift; sourceTree = "<group>"; };
-		B3CB04DC944BDA09E2DFAFB7B6576A7C /* CovertOpsData.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = CovertOpsData.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B3CB04DC944BDA09E2DFAFB7B6576A7C /* CovertOpsData.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CovertOpsData.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B4B1ABA89D4339BD339043388AB2CF62 /* NSOrderedSet+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSOrderedSet+.swift"; path = "CovertOpsData/Classes/NSOrderedSet+.swift"; sourceTree = "<group>"; };
 		B91FBCB29F092FE9A60DACF6BAF2CB7A /* CovertOps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CovertOps.xcconfig; sourceTree = "<group>"; };
 		BC5AAA8DD779EB6D3A0175334CC1C596 /* Pods-CovertOpsData_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CovertOpsData_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BEC10807E4C4090E04CC1DECE9D2E585 /* DatabaseOperations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseOperations.swift; path = CovertOpsData/Classes/DatabaseOperations.swift; sourceTree = "<group>"; };
-		BEC3EDC45B1131EDC1349C1E4E0D7E63 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BEC3EDC45B1131EDC1349C1E4E0D7E63 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		CBBDA5A11E516102A3ED6EB0E30D2926 /* Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wait.swift; path = CovertOps/Classes/Wait.swift; sourceTree = "<group>"; };
 		D84CC563F6756000B3B2EDFE47177531 /* BlockUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockUtilities.swift; path = CovertOps/Classes/BlockUtilities.swift; sourceTree = "<group>"; };
 		D9AE795586AF4058F5AD32A181C8D7E5 /* Pods-CovertOpsData_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CovertOpsData_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DF1E44A36657C1EBE645E1A3A234E8E3 /* Pods_CovertOpsData_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovertOpsData_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1E44A36657C1EBE645E1A3A234E8E3 /* Pods_CovertOpsData_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CovertOpsData_Example.framework; path = "Pods-CovertOpsData_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B6B450E5CB5FAA9501AB74B5A756BF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		E56AB205DF3090CC2085820F87C082BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EC1683C6691B30AD1DD2BC76DE8F4886 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -335,6 +335,7 @@
 				CBBDA5A11E516102A3ED6EB0E30D2926 /* Wait.swift */,
 				2655A5DD65907502449EFEF077B6CAAA /* Support Files */,
 			);
+			name = CovertOps;
 			path = CovertOps;
 			sourceTree = "<group>";
 		};
@@ -477,7 +478,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -733,7 +734,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -762,7 +762,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -894,7 +895,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -996,7 +998,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
