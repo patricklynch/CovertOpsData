@@ -40,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1jM-fk-LrA">
-                                <rect key="frame" x="0.0" y="56" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="476"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TodoCell" rowHeight="91" id="SPb-Oo-qM6" customClass="TodoCell" customModule="CovertOpsData_Example" customModuleProvider="target">
@@ -91,14 +91,34 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="gkS-jU-k1e"/>
                                 </connections>
                             </searchBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TsP-XH-bGZ">
+                                <rect key="frame" x="8" y="540" width="359" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUK-c9-kcG">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="55"/>
+                                        <color key="backgroundColor" red="0.08235294118" green="0.4941176471" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="t01-hw-Pgc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Create Todo"/>
+                                        <connections>
+                                            <action selector="onCreateTodo" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jV2-HK-njJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TsP-XH-bGZ" secondAttribute="trailing" constant="8" id="Don-ET-o9B"/>
                             <constraint firstItem="9zi-yo-Va7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="H1S-nO-CKP"/>
                             <constraint firstItem="1jM-fk-LrA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="H55-96-6gf"/>
                             <constraint firstItem="1jM-fk-LrA" firstAttribute="top" secondItem="9zi-yo-Va7" secondAttribute="bottom" id="RaL-en-ARm"/>
+                            <constraint firstItem="TsP-XH-bGZ" firstAttribute="top" secondItem="1jM-fk-LrA" secondAttribute="bottom" constant="8" id="Wbw-fP-Bnn"/>
+                            <constraint firstItem="TsP-XH-bGZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="Y6Q-tp-wDb"/>
                             <constraint firstAttribute="trailing" secondItem="9zi-yo-Va7" secondAttribute="trailing" id="YLb-dr-Ald"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1jM-fk-LrA" secondAttribute="bottom" id="bNQ-Xi-c5M"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="TsP-XH-bGZ" secondAttribute="bottom" constant="8" id="gww-z5-FH4"/>
                             <constraint firstAttribute="trailing" secondItem="1jM-fk-LrA" secondAttribute="trailing" id="rNO-lf-uOw"/>
                             <constraint firstItem="9zi-yo-Va7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="wSb-eb-bff"/>
                         </constraints>

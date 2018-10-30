@@ -36,12 +36,18 @@ class TodosListViewController: UIViewController, UITableViewDataSource, UITableV
             // Side load users and save in persistent store:
             let operations = [
                 Wait(duration: 1.0),
-                NetworkOperation<[UserPayload]>(apiPath: "users"),
+                GetRemoteUsers(),
                 SaveUsers()
             ]
             operations.chained().queue() { _ in
                 self.updateAll()
             }
+        }
+    }
+    
+    @IBAction func onCreateTodo() {
+        CreateTodo(userId: "9999").queue() { _,_ in
+            self.refetch(andReload: false)
         }
     }
     

@@ -2,6 +2,8 @@ import Foundation
 import CoreData
 import CovertOpsData
 
+extension Todo: IdentifiableObject { }
+
 class SaveTodos: DatabaseWriteOperation {
     
     override func write(context: NSManagedObjectContext) {
@@ -13,10 +15,11 @@ class SaveTodos: DatabaseWriteOperation {
         
         for payload in todos {
             let todo: Todo = context.fetchOrCreate(id: String(payload.id))
-            todo.id = Int64(payload.id)
+            todo.identifier = Identifier.generateLocal(remote: String(payload.id))
             todo.title = payload.title
             todo.isCompleted = payload.completed
-            todo.userId = Int64(payload.userId)
+            todo.userId = String(payload.userId)
+            todo.dateCreated = Date()
         }
         save(context)
     }
@@ -24,14 +27,14 @@ class SaveTodos: DatabaseWriteOperation {
 
 class ToddleTodoComplete: DatabaseWriteOperation {
     
-    let id: Int64
+    let identifier: Identifier
     
-    init(id: Int64) {
-        self.id = id
+    init(identifier: Identifier) {
+        self.identifier = identifier
     }
     
     override func write(context: NSManagedObjectContext) {
-        guard let todo: Todo = context.fetch(id: String(id)) else {
+        guard let todo: Todo = context.fetch(identifier: identifier) else {
             return
         }
         todo.isCompleted = !todo.isCompleted
@@ -39,16 +42,62 @@ class ToddleTodoComplete: DatabaseWriteOperation {
     }
 }
 
-class DeleteTodo: DatabaseWriteOperation {
+class SyncWithRemote: DatabaseOperation<Void> {
     
-    let id: Int64
+    override func execute() {
+        let context = database.backgroundContext
+        context.perform {
+            let predicate = NSPredicate(format: "id = nil && localId != nil")
+            let createdTodos: [Todo] = context.fetchAll(predicate: predicate)
+            let payloads: [TodoPostPayload] = createdTodos.map { todo in
+                return TodoPostPayload(
+                    localId: todo.localId ?? "",
+                    title: todo.title!,
+                    completed: todo.isCompleted
+                )
+            }
+            let operations: [Operation] = payloads.compactMap { payload in
+                return CreateRemoteTodo(payload: payload)
+            }
+            operations.queue() { _ in
+                self.finish()
+            }
+        }
+    }
     
-    init(id: Int64) {
-        self.id = id
+}
+
+class CreateTodo: DatabaseWriteOperation {
+    let userId: String
+    
+    private var postPayload: TodoPayload?
+    
+    init(userId: String) {
+        self.userId = userId
     }
     
     override func write(context: NSManagedObjectContext) {
-        guard let todo: Todo = context.fetch(id: String(id)) else {
+        let count = context.count(of: Todo.self)
+        let newTodo: Todo = context.create()
+        newTodo.title = "New Todo \(count + 1)"
+        newTodo.identifier = Identifier.generateLocal()
+        newTodo.isCompleted = false
+        newTodo.userId = userId
+        newTodo.dateCreated = Date()
+        save(context)
+    }
+}
+
+class DeleteTodo: DatabaseWriteOperation {
+    
+    let identifier: Identifier
+    
+    init(identifier: Identifier) {
+        self.identifier = identifier
+    }
+    
+    override func write(context: NSManagedObjectContext) {
+        guard let todo: Todo = context.fetch(identifier: identifier) else {
             return
         }
         context.delete(todo)
@@ -65,15 +114,19 @@ class SaveUsers: DatabaseWriteOperation {
         }
         
         for payload in users {
-            let user: User = context.fetchOrCreate(id: String(payload.id))
-            user.id = Int64(payload.id)
+            let userId = String(payload.id)
+            let user: User = context.fetchOrCreate(id: userId)
+            user.id = userId
             user.name = payload.name
             user.username = payload.username
             user.email = payload.email
             user.phone = payload.phone
             user.website = payload.website
             
-            let predicate = NSPredicate(format: "userId = %i", user.id)
+            let predicate = [
+                NSPredicate(format: "userId = %@", userId),
+                NSPredicate(format: "user.id = %@", userId)
+            ].compoundOr()
             let todos: [Todo] = context.fetchAll(predicate: predicate)
             user.todos = NSOrderedSet(array: todos)
         }
@@ -92,15 +145,16 @@ class FetchAllTodos: DatabaseFetchObjects<Todo> {
     }
     
     override func operationWillStart() {
-        [NetworkOperation<[TodoPayload]>(apiPath: "todos"), SaveTodos()].chained().before(self).queue()
+        [GetRemoteTodos(), SaveTodos()].chained().before(self).queue()
     }
     
     override func fetch(context: NSManagedObjectContext) -> [Todo]? {
+        let dateSortDescriptor = NSSortDescriptor(key: #keyPath(Todo.dateCreated), ascending: false)
         if let searchTerm = searchTerm {
             let predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchTerm)
-            return context.fetchAll(predicate: predicate, sortDescriptors: [])
+            return context.fetchAll(predicate: predicate, sortDescriptors: [dateSortDescriptor])
         } else {
-            return context.fetchAll()
+            return context.fetchAll(sortDescriptors: [dateSortDescriptor])
         }
     }
 }

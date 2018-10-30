@@ -40,14 +40,18 @@ class TodoDetailViewController: UIViewController {
     @IBAction func onToggleComplete() {
         guard let todo = todo else { return }
         
-        ToddleTodoComplete(id: todo.id).queue()
+        ToddleTodoComplete(identifier: todo.identifier).queue()
     }
     
     @IBAction func onDelete() {
         guard let todo = todo else { return }
         
-        DeleteTodo(id: todo.id).queue() { _,_ in
+        DeleteTodo(identifier: todo.identifier).queue() { _,_ in
             self.navigationController?.popViewController(animated: true)
+            
+            if let remoteId = todo.id {
+                DeleteRemoteTodo(id: remoteId).queue()
+            }
         }
     }
 }

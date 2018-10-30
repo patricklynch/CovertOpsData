@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol IdentifiableObject {
+public protocol IdentifiableObject: class {
     var id: String? { set get }
     var localId: String? { set get }
 }
@@ -8,7 +8,12 @@ public protocol IdentifiableObject {
 public extension IdentifiableObject {
     
     public var identifier: Identifier {
-        return Identifier(remote: id, local: localId)
+        get {
+            return Identifier(remote: id, local: localId)
+        } set {
+            id = identifier.remote
+            localId = identifier.local
+        }
     }
 }
 
@@ -55,7 +60,7 @@ public struct Identifier: Equatable, Hashable {
         return NSUUID().uuidString
     }
     
-    static func generateLocal(remote: String? = nil) -> Identifier {
+    public static func generateLocal(remote: String? = nil) -> Identifier {
         return Identifier(remote: remote, local: Identifier.generateLocalId())
     }
     

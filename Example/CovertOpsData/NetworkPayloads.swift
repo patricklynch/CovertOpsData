@@ -1,5 +1,21 @@
 import Foundation
 
+class TodoPostPayload: Codable {
+    let localId: String
+    let title: String
+    let completed: Bool
+    
+    private enum CodingKeys: String, CodingKey {
+        case localId, title, completed
+    }
+    
+    init(localId: String, title: String, completed: Bool) {
+        self.localId = localId
+        self.title = title
+        self.completed = completed
+    }
+}
+
 class TodoPayload: Codable {
     let id: Int
     let title: String
