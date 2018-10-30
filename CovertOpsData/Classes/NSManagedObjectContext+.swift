@@ -1,10 +1,25 @@
 import Foundation
 import CoreData
 
+extension Array where Element : NSManagedObject {
+    
+    public func deleted() -> [Element] {
+        return filter { !$0.existsInContext }
+    }
+    
+    public func existing() -> [Element] {
+        return filter { $0.existsInContext }
+    }
+}
+
 public extension NSManagedObject {
     
     public static var entityName: String {
         return String(describing: self)
+    }
+    
+    public var existsInContext: Bool {
+        return managedObjectContext?.object(with: objectID) != nil
     }
 }
 

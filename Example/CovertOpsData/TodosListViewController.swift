@@ -2,18 +2,16 @@ import UIKit
 import CovertOps
 import CovertOpsData
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+class TodosListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+    
+    let databaseName = "Todos"
 
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!
     
     private var currentSearchTerm: String?
     
-    private var todos: [Todo] = [] {
-        didSet {
-            self.updateAll()
-        }
-    }
+    private var todos: [Todo] = []
     
     private func updateAll() {
         tableView.beginUpdates()
@@ -21,17 +19,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.endUpdates()
     }
     
-    private func update(at indexPath: IndexPath) {
-        tableView.beginUpdates()
-        tableView.reloadRows(at: [indexPath], with: .automatic)
-        tableView.endUpdates()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        todos = todos.existing()
+        updateAll()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let databaseName = "Todos"
-        let url: URL? = nil // = MainDatabaseSelector.defaultUrl(forDatabaseNamed: databaseName)
+        let url: URL? = MainDatabaseSelector.defaultUrl(forDatabaseNamed: databaseName)
         InitializeDatabase(databaseName: databaseName, url: url).queue() { _,_ in
             self.refetch(andReload: false)
             
@@ -50,6 +48,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     private func refetch(andReload reload: Bool) {
         FetchAllTodos(searchTerm: currentSearchTerm, reload: reload).queue() { _, todos in
             self.todos = todos ?? []
+            self.updateAll()
         }
     }
     
@@ -59,9 +58,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.deselectRow(at: indexPath, animated: true)
         
         let selectedTodo = todos[indexPath.row]
-        CompleteTodo(id: selectedTodo.id).queue() { _,_ in
-            self.update(at: indexPath)
-        }
+        let detailViewController = storyboard?.instantiateViewController(withIdentifier: "TodoDetailViewController") as! TodoDetailViewController
+        detailViewController.todo = selectedTodo
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
     
     // MARK: - UITableViewDataSource
@@ -73,15 +72,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let todo = todos[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "TodoCell", for: indexPath) as! TodoCell
-        let subtitle: String?
+        var subtitle = todo.isCompleted ? "✅" : ""
         if let user = todo.user {
-            subtitle = "Created by \(user.name!)"
-        } else {
-            subtitle = nil
+            subtitle.append("Created by \(user.name!)")
         }
         cell.viewData = TodoCell.ViewData(
             title: todo.title?.localizedCapitalized ?? "",
-            textColor: todo.isCompleted ? .black : .gray,
             subtitle: subtitle
         )
         return cell
@@ -92,5 +88,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.currentSearchTerm = searchBar.text
         self.refetch(andReload: false)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            self.currentSearchTerm = nil
+            self.refetch(andReload: false)
+        }
     }
 }

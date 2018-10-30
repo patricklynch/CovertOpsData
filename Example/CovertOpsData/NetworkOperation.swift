@@ -33,7 +33,7 @@ class NetworkOperation<T: Codable>: AsyncOperation<NetworkOperationOutput<T>> {
                     print("Unkonwn error")
                     self.finish(output: NetworkOperationOutput(data: nil, error: error))
                 }
-        }
+            }
         )
         task.resume()
     }

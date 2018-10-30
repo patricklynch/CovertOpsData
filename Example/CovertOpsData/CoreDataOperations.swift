@@ -22,7 +22,7 @@ class SaveTodos: DatabaseWriteOperation {
     }
 }
 
-class CompleteTodo: DatabaseWriteOperation {
+class ToddleTodoComplete: DatabaseWriteOperation {
     
     let id: Int64
     
@@ -34,7 +34,7 @@ class CompleteTodo: DatabaseWriteOperation {
         guard let todo: Todo = context.fetch(id: String(id)) else {
             return
         }
-        todo.isCompleted = true
+        todo.isCompleted = !todo.isCompleted
         save(context)
     }
 }
@@ -48,6 +48,10 @@ class DeleteTodo: DatabaseWriteOperation {
     }
     
     override func write(context: NSManagedObjectContext) {
+        guard let todo: Todo = context.fetch(id: String(id)) else {
+            return
+        }
+        context.delete(todo)
         save(context)
     }
 }
