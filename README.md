@@ -12,7 +12,7 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first.  The example app built within is a very simple "Todos" app that can fetch, create, delete and seach for todos loaded from [JSONPlaceholder(https://jsonplaceholder.typicode.com/). 
 
 ## Installation
 
@@ -24,6 +24,11 @@ To install using Carthage, add the following to your project Cartfile:
 ```ruby
 github "patricklynch/CovertOpsData"
 ```
+
+## Concepts
+
+### Operations
+As an extension to [`CovertOps`](https://github.com/patricklynch/CovertOps), this framework contains specialized operation subclasses that will read to and write from a CoreData persistent store while handling all of the treading rules for you.  There is also a handlful of extensions for `NSManagedObject` and `NSManagedObjectContext` that make it faster and easier to interact with the persistent store when you are implementing operations of your own.
 
 ## Author
 
