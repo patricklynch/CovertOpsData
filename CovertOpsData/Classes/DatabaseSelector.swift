@@ -3,8 +3,8 @@ import Foundation
 import CoreData
 
 public protocol DatabaseSelector {
-    func database(named databaseName: String?) -> Database
-    func add(database: Database, named databaseName: String)
+    func database(named managedObjectModelName: String?) -> Database
+    func add(database: Database, named managedObjectModelName: String)
     var defaultDatabase: Database? { get set }
 }
 
@@ -20,10 +20,10 @@ public class MainDatabaseSelector: DatabaseSelector {
     
     // MARK: - DatabaseSelector
     
-    public func database(named databaseName: String?) -> Database {
-        if let databaseName = databaseName {
-            guard let selectedDatabase = databasesByName[databaseName]else {
-                fatalError("Failed to find database named: \(databaseName)")
+    public func database(named managedObjectModelName: String?) -> Database {
+        if let managedObjectModelName = managedObjectModelName {
+            guard let selectedDatabase = databasesByName[managedObjectModelName]else {
+                fatalError("Failed to find database named: \(managedObjectModelName)")
             }
             return selectedDatabase
         } else if let defaultDatabase = defaultDatabase {
@@ -33,15 +33,15 @@ public class MainDatabaseSelector: DatabaseSelector {
         }
     }
     
-    public func add(database: Database, named databaseName: String) {
-        databasesByName[databaseName] = database
+    public func add(database: Database, named managedObjectModelName: String) {
+        databasesByName[managedObjectModelName] = database
         defaultDatabase = database
     }
 }
 
 public extension DatabaseSelector {
     
-    public static func defaultUrl(forDatabaseNamed name: String) -> URL {
+    public static func defaultUrl(formanagedObjectModelNamed name: String) -> URL {
         let docsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return docsDirectory.appendingPathComponent(name)
     }

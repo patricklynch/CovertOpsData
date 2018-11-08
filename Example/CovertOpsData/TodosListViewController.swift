@@ -4,7 +4,7 @@ import CovertOpsData
 
 class TodosListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
-    let databaseName = "Todos"
+    let managedObjectModelName = "Todos"
 
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!
@@ -29,8 +29,8 @@ class TodosListViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url: URL? = MainDatabaseSelector.defaultUrl(forDatabaseNamed: databaseName)
-        InitializeDatabase(databaseName: databaseName, url: url).queue() { _,_ in
+        let url: URL? = MainDatabaseSelector.defaultUrl(formanagedObjectModelNamed: managedObjectModelName)
+        InitializeDatabase(managedObjectModelName: managedObjectModelName, url: url).queue() { _,_ in
             self.refetch(andReload: false)
             
             // Side load users and save in persistent store:

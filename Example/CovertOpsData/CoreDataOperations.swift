@@ -137,24 +137,22 @@ class SaveUsers: DatabaseWriteOperation {
 class FetchAllTodos: DatabaseFetchObjects<Todo> {
     
     let reload: Bool
-    let searchTerm: String?
     
     init(searchTerm: String?, reload: Bool = false) {
-        self.searchTerm = searchTerm
         self.reload = reload
-    }
-    
-    override func operationWillStart() {
-        [GetRemoteTodos(), SaveTodos()].chained().before(self).queue()
-    }
-    
-    override func fetch(context: NSManagedObjectContext) -> [Todo]? {
+        
         let dateSortDescriptor = NSSortDescriptor(key: #keyPath(Todo.dateCreated), ascending: false)
         if let searchTerm = searchTerm {
             let predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchTerm)
-            return context.fetchAll(predicate: predicate, sortDescriptors: [dateSortDescriptor])
+            super.init(predicate: predicate, sortDescriptors: [dateSortDescriptor])
         } else {
-            return context.fetchAll(sortDescriptors: [dateSortDescriptor])
+            super.init(sortDescriptors: [dateSortDescriptor])
         }
+    }
+    
+    override func operationWillStart() {
+        guard reload else { return }
+        
+        [GetRemoteTodos(), SaveTodos()].chained().before(self).queue()
     }
 }

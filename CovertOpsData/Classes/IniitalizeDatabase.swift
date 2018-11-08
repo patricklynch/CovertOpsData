@@ -4,22 +4,22 @@ import CovertOps
 
 public class InitializeDatabase: AsyncOperation<Void> {
     
-    let databaseName: String
+    let managedObjectModelName: String
     let url: URL?
     
     var databaseSelector: DatabaseSelector = MainDatabaseSelector.shared
     
-    public init(databaseName: String, url: URL?) {
-        self.databaseName = databaseName
+    public init(managedObjectModelName: String, url: URL?) {
+        self.managedObjectModelName = managedObjectModelName
         self.url = url
     }
     
     override public func execute() {
         let database: Database
         if #available(iOS 10.0, *) {
-            database = PersistentContainerStack(dataModelName: databaseName, at: url)
+            database = PersistentContainerStack(dataModelName: managedObjectModelName, at: url)
         } else {
-            database = LegacyCoreDataStack(dataModelName: databaseName, at: url)
+            database = LegacyCoreDataStack(dataModelName: managedObjectModelName, at: url)
         }
         database.load() { error in
             if let error = error {
@@ -38,7 +38,7 @@ public class InitializeDatabase: AsyncOperation<Void> {
                 }
                 
             } else {
-                self.databaseSelector.add(database: database, named: self.databaseName)
+                self.databaseSelector.add(database: database, named: self.managedObjectModelName)
                 self.finish(output: nil)
             }
         }

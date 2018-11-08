@@ -8,14 +8,14 @@ import CovertOps
 open class DatabaseOperation<OutputType>: AsyncOperation<OutputType> {
     
     public lazy var database: Database = {
-        return databaseSelector.database(named: self.databaseName)
+        return databaseSelector.database(named: self.managedObjectModelName)
     }()
     
-    private(set) var databaseName: String?
+    private(set) var managedObjectModelName: String?
     public var databaseSelector: DatabaseSelector = MainDatabaseSelector.shared
     
-    public init(databaseName: String? = nil) {
-        self.databaseName = databaseName
+    public init(managedObjectModelName: String? = nil) {
+        self.managedObjectModelName = managedObjectModelName
     }
 }
 
@@ -81,17 +81,17 @@ open class DatabaseRefetch<T: NSManagedObject>: DatabaseOperation<[T]> {
 /// The context is automatically selected based on the thread of execution.  When `execute()`
 /// is called on the main thread, the view context of the persistent store is selected.  On
 /// any other thread, a background child context will be selected.
-open class DatabaseSyncRead<OutputType> {
+open class DatabaseFetchAsync<OutputType> {
     
     lazy var database: Database = {
-        return databaseSelector.database(named: self.databaseName)
+        return databaseSelector.database(named: self.managedObjectModelName)
     }()
     
-    private(set) var databaseName: String?
+    private(set) var managedObjectModelName: String?
     public final var databaseSelector: DatabaseSelector = MainDatabaseSelector.shared
     
-    public init(databaseName: String? = nil) {
-        self.databaseName = databaseName
+    public init(managedObjectModelName: String? = nil) {
+        self.managedObjectModelName = managedObjectModelName
     }
     
     public final func execute() -> OutputType {
@@ -137,6 +137,14 @@ open class DatabaseFetchObject<OutputType: NSManagedObject>: DatabaseOperation<O
 
 open class DatabaseFetchObjects<OutputType: NSManagedObject>: DatabaseOperation<[OutputType]> {
     
+    let predicate: NSPredicate?
+    let sortDescriptors: [NSSortDescriptor]
+    
+    public init(predicate: NSPredicate? = nil, sortDescriptors: [NSSortDescriptor] = []) {
+        self.predicate = predicate
+        self.sortDescriptors = sortDescriptors
+    }
+    
     override open func execute() {
         let backgroundContext = database.backgroundContext
         let viewContext = database.viewContext
@@ -153,6 +161,6 @@ open class DatabaseFetchObjects<OutputType: NSManagedObject>: DatabaseOperation<
     }
     
     open func fetch(context: NSManagedObjectContext) -> [OutputType]? {
-        fatalError("Override in subclass")
+        return context.fetchAll(predicate: predicate, sortDescriptors: sortDescriptors)
     }
 }
